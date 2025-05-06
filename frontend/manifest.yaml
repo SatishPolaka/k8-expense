@@ -25,10 +25,10 @@ spec:
       containers:
       - name: nginx
         image: satishpolaka/frontend:1.0.0
-        ports:
-        - containerPort: 80
-        securityContext:
-          runAsUser: 0 # runAsUser: 0 is used to run the container as root user
+        # ports:
+        # - containerPort: 80
+        # securityContext:
+        #   runAsUser: 0 # runAsUser: 0 is used to run the container as root user
 ---
 kind: Service
 apiVersion: v1
