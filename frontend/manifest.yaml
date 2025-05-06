@@ -37,7 +37,11 @@ spec:
     app: frontend
     tier: web
     project: expense
-  ports:
-  - protocol: TCP
-    port: 80 # service port
-    targetPort: 80
+  # ports:
+  # - protocol: TCP
+  #   port: 80 # service port
+  #   targetPort: 80
+    ports:
+    - containerPort: 80
+    securityContext:
+      runAsUser: 0 
