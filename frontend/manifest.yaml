@@ -41,7 +41,7 @@ spec:
   - protocol: TCP
     port: 80 # service port
     targetPort: 80
-    ports:
-    - containerPort: 80
-    securityContext:
-      runAsUser: 0 
+    # ports:
+    # - containerPort: 80
+    # securityContext:
+    #   runAsUser: 0 
